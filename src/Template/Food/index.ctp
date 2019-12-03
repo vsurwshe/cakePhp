@@ -20,8 +20,6 @@
                 <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('name') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('price') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -31,8 +29,6 @@
                 <td><?= $this->Number->format($food->id) ?></td>
                 <td><?= h($food->name) ?></td>
                 <td><?= $this->Number->format($food->price) ?></td>
-                <td><?= h($food->created) ?></td>
-                <td><?= h($food->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $food->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $food->id]) ?>

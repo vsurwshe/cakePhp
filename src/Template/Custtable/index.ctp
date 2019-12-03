@@ -22,8 +22,6 @@
                 <th scope="col"><?= $this->Paginator->sort('tableNo') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('qty') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('price') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('created') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('modified') ?></th>
                 <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
@@ -35,8 +33,6 @@
                 <td><?= $this->Number->format($custtable->tableNo) ?></td>
                 <td><?= $this->Number->format($custtable->qty) ?></td>
                 <td><?= $this->Number->format($custtable->price) ?></td>
-                <td><?= h($custtable->created) ?></td>
-                <td><?= h($custtable->modified) ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $custtable->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $custtable->id]) ?>
